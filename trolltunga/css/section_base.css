@@ -1,0 +1,31 @@
+
+
+/*size, and align, flex values of content units*/
+
+section{
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color:grey;
+  background-color: white;
+  line-height:1.6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align:justify;
+  /*text-justify:;*/
+}
+
+section h1 {
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+
+section h1{
+
+  text-align: center;
+
+  }
+}

@@ -1,0 +1,6 @@
+section {
+  margin-left: 40px;
+  color:grey;
+  background-color: white;
+  line-height:1.6;
+  padding-top: 50px;

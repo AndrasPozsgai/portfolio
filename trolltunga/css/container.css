@@ -1,0 +1,10 @@
+/*===========================
+      style of container
+=============================*/
+
+
+
+#container{ display:-moz-flex;
+  display:flex;
+  flex-direction:column;
+}

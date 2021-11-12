@@ -1,0 +1,99 @@
+
+/*navigation with mediaqerries*/
+
+ nav{
+ width:100%;
+ padding-top: 10px;
+ background-color: grey;
+ color:orange;
+ font-weight: bold;
+ /*opacity: 0.8;*/
+ display:flex;
+ position:fixed;
+ color:white;
+ text-transform:uppercase;
+ z-index:100;
+}
+
+ nav ul{
+ list-style-type: none;
+ display:flex;
+ flex-direction:row;
+ justify-content:space-around;
+}
+
+nav img{
+width:30px;
+}
+
+  nav ul li a{
+  color:white;
+  padding:20px;
+  padding-top:10px;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+
+color:orange;
+padding:20px;
+padding-top:10px
+background-color:;     
+transition:0.4s;
+}
+
+
+  a:active {
+  color: #0000FF;
+}
+
+
+
+
+
+/*Optimalisation for mobile, ONLY PORTRAIT ORIENTATION!!*/
+
+
+@media only screen and (max-width:600px){
+  nav{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  background-color:rgb(128,128,128,0.2);
+  position:static;
+  margin-top:10px;
+
+}
+  nav img{
+  width:80px;
+  padding-bottom:20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align: center;
+  margin:0 auto;
+
+  }
+
+nav ul li{
+  padding:10px;
+
+
+}
+
+nav ul li a:hover{
+
+border:0px
+}
+
+
+nav ul a{
+
+justify-content:center;
+text-align: center;
+}
+

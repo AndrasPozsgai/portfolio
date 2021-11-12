@@ -1,0 +1,55 @@
+/*==========================
+footer
+============================*/
+
+
+
+footer{
+height:250px;
+background-color: gray;
+width:100%;
+
+display:flex;
+display:-moz-flex;
+padding-top:20px;
+}
+/*fa in ul and li*/
+#fa {
+flex-direction:row;
+justify-content: center;
+color:red; font-size:100px;
+margin: auto auto;
+}
+#fa a:link {
+  color:white;
+}
+#fa a:hover {
+  color:orange;
+}
+#fa a:active {
+    color:aqua;
+}
+#fa a:visited {
+color:orange;
+}
+
+/*
+footer basic optimalisation desktop, and mobile.
+*/
+@media only screen and (max-width:600px){
+#fa a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+}
+}
+@media only screen and (max-width:600px){
+
+footer{
+  height: 500px;
+  display:flex;
+  flex-direction:column;
+
+}
+}

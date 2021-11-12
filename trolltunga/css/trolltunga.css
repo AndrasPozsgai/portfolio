@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import "nav.css";
+@import "section_base.css";
+@import "font.css";
+@import "container.css";
+@import "footer.css";
+
+html{
+scroll-behavior: smooth;
+}
+/***********************
+**********Body**********/
+
+
+*{
+
+ margin:0;
+ padding:0;
+ font-family: 'Poppins', sans-serif;
+
+
+}
+
+
+
+#header{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url('../pictures/header_tolltunga.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+	
+ 
+}
+
+
+#header_logo{
+  background-image: url('../pictures/logo.png');
+  background-color:inherit;
+  width: 240px;
+  height: 200px;
+  background-size:contain;
+  margin:auto auto;
+  background-size:cover;
+  background-repeat: no-repeat;
+  animation: fadeInAnimation ease 4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+
+}
+@keyframes fadeInAnimation {
+  0% {
+  opacity: 0;
+	}
+			
+  100% {
+  opacity: 1;
+	}
+}
+
+
+
+
+
+
+
+/*container*/
+#container{ display:-moz-flex;
+  display:flex;
+  flex-direction:column;
+  scroll-behavior: smooth;
+}
+
+
+
+main{
+  color:grey;
+
+}
+.center{
+margin:20px auto;
+justify-content: center;
+flex-direction: row;
+align-items: center;
+
+}
+
+.row {
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  text-align:justify;
+
+}
+
+
+/* Two equal columns */
+#where {
+  flex: 25%;
+  padding: 20px;
+  line-height:1.6;
+  justify-content: center;
+  align-items: center;
+}
+
+#geology {
+  flex: 25%;
+  padding: 20px;
+  line-height:1.6;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: -10px;
+}
+
+#geology > h1 {
+  padding-top:-15px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex:50%;
+
+  }
+}
+
+/* If a screen is 600px or less wide, stack the columns on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction:column;
+    flex: 50%;
+  }
+}
+
+#pic_container_1{
+  margin-top: 50px;
+  width:80%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content:center;
+
+  height: 460px;
+  background-image: url('../pictures/path-4967662_1280.jpg');
+  background-size:cover;
+
+  background-repeat: no-repeat;
+  background-position:center;
+
+
+  webkit-box-shadow: 2px 0px 8px 0px rgba(50, 50, 50, 0.54);
+  -moz-box-shadow:    2px 0px 8px 0px rgba(50, 50, 50, 0.54);
+  box-shadow:         2px 0px 8px 0px rgba(50, 50, 50, 0.54);
+
+
+}
+
+#pic_container_2{
+  margin-top: 50px;
+  width:80%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content:center;
+
+  height: 460px;
+  background-image: url('../pictures/trolltunga.jpg');
+  background-size:cover;
+
+  background-repeat: no-repeat;
+  background-position:center;
+
+
+  webkit-box-shadow: 2px 0px 8px 0px rgba(50, 50, 50, 0.54);
+  -moz-box-shadow:    2px 0px 8px 0px rgba(50, 50, 50, 0.54);
+  box-shadow:         2px 0px 8px 0px rgba(50, 50, 50, 0.54);
+
+
+}
+
+#pic_container_3{
+  margin-top: 50px;
+  width:80%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content:center;
+
+  height: 460px;
+  background-image: url('../pictures/trolltunga-3.jpg');
+  background-size:cover;
+
+  background-repeat: no-repeat;
+  background-position:center;
+
+
+  webkit-box-shadow: 2px 0px 8px 0px rgba(50, 50, 50, 0.54);
+  -moz-box-shadow:    2px 0px 8px 0px rgba(50, 50, 50, 0.54);
+  box-shadow:         2px 0px 8px 0px rgba(50, 50, 50, 0.54);
+}
+
+
+#map {
+  margin-top: 50px;
+  width:80%;
+  padding-bottom:40px;
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction:row;
+  justify-content:center;
+  height: 460px;
+
+  webkit-box-shadow: 0 -5px 5px -5px #333;
+  box-shadow: 0 -5px 5px -5px #333;
+  moz-box-shadow: 0 -5px 5px -5px #333;
+}
+@media screen and (max-width: 600px) {
+#pic_container_1, #pic_container_2, #pic_container_3, map {
+     height: 150px;
+     width:100%;
+ }
+
+
+
+section_access{
+
+  margin-bottom: 25px;
+}
+
+
+/*display:none;- not working*/
+}
+
+cite{
+
+  padding-top 12px;
+  text-align:right;
+}
+}
+/*@media and all (min-width: 600px) {
+
+  #trl {
+  display:none;
+  }
+
+}
+*/
+/*@media only screen and (min-width: 600px) {
+    div {
+        display: none;
+    }
+}
+*/
