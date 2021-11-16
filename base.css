@@ -24,19 +24,36 @@
 	}
 	
 	#header {
-	    background-image: url("gif-bg.gif");
+	    background-image: url("");
+	    background-color: rgb(29, 6, 34);
+	    background-blend-mode: multiply;
 	    background-size: cover;
 	    background-position: bottom;
 	    color: white;
 	    letter-spacing: 2px;
 	    padding-top: 150px;
 	    height: 100vh;
+	    animation: change 30s ease-in-out infinite;
 	}
 	
-	@keyframes {}
+	@keyframes change {
+	    0% {
+	        background-image: url(gif-bg.gif);
+	        background-color: rgb(115, 28, 134);
+	    }
+	    50% {
+	        background-image: url(gif2-bg.gif);
+	        background-color: rgb(80, 124, 133);
+	    }
+	    100% {
+	        background-image: url(gif3-bg.gif);
+	        background-color: rgb(198, 211, 25);
+	    }
+	}
 	
 	#header h1 {
-	    font-family: 'Caveat', cursive;
+	    /*font-family: 'Caveat', cursive;*/
+	    letter-spacing: 5px;
 	}
 	
 	#Jumbo__about {
