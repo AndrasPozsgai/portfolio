@@ -1,122 +1,128 @@
-	@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap');
-	html {
-	    scroll-behavior: smooth;
-	}
-	
-	body {
-	    overflow-x: hidden;
-	    font-family: 'Oswald', sans-serif;
-	    margin: 0;
-	    padding: 0;
-	    scroll-behavior: smooth;
-	}
-	
-	.navbar {
-	    text-align: center;
-	    background: transparent;
-	}
-	/*header*/
-	
-	h1 {
-	    font-size: 60px;
-	}
-	
-	#header {
-	    background-image: url("");
-	    background-color: rgb(29, 6, 34);
-	    background-blend-mode: multiply;
-	    background-size: cover;
-	    background-position: bottom;
-	    color: white;
-	    letter-spacing: 2px;
-	    padding-top: 150px;
-	    height: 100vh;
-	    animation: change 30s ease-in-out infinite;
-	}
-	
-	@keyframes change {
-	    0% {
-	        background-image: url(gif-bg.gif);
-	        background-color: rgb(115, 28, 134);
-	    }
-	    50% {
-	        background-image: url(gif2-bg.gif);
-	        background-color: rgb(80, 124, 133);
-	    }
-	    100% {
-	        background-image: url(gif3-bg.gif);
-	        background-color: rgb(198, 211, 25);
-	    }
-	}
-	
-	#header h1 {
-	    /*font-family: 'Caveat', cursive;*/
-	    letter-spacing: 5px;
-	}
-	
-	#Jumbo__about {
-	    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
-	}
-	/*Button positions and hover*/
-	
-	#btn-center {
-	    position: center;
-	}
-	
-	#btn-header {
-	    border: 2px solid white;
-	    color: white;
-	    background-color: transparent;
-	    padding: 20px 20px 20px 20px;
-	}
-	
-	#btn-header:hover {
-	    background-color: whitesmoke;
-	    color: grey;
-	    border: none;
-	}
-	
-	#columns {
-	    box-sizing: border-box;
-	}
-	
-	#szolgaltatasok {
-	    padding-top: 65px;
-	}
-	
-	.card {
-	    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	    text-align: center;
-	    transition: 0.1s linear;
-	}
-	
-	.card:hover {
-	    transform: scale(1.15);
-	    object-fit: ;
-	    box-shadow: rgba(32, 145, 200, 0.50) 0px 5px 15px;
-	}
-	
-	.card-title {
-	    position: ;
-	    background-position: center;
-	    width: px;
-	    text-align: center;
-	}
-	
-	.card img {
-	    width: 300px;
-	    height: 300px;
-	    object-fit: cover;
-	}
-	
-	@media only screen and (max-width: 800px) {
-	    #nav__desctop {
-	        display: none;
-	    }
-	}
-	
-	#footer {
-	    color: white;
-	}
+	            @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+	            @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+	            @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap');
+	            html {
+	                scroll-behavior: smooth;
+	            }
+	            
+	            body {
+	                overflow-x: hidden;
+	                font-family: 'Oswald', sans-serif;
+	                margin: 0;
+	                padding: 0;
+	                scroll-behavior: smooth;
+	            }
+	            
+	            .navbar {
+	                text-align: center;
+	                background: transparent;
+	            }
+	            /*header*/
+	            
+	            h1 {
+	                font-size: 60px;
+	            }
+	            
+	            #header {
+	                background-image: url("");
+	                background-color: rgb(29, 6, 34);
+	                background-blend-mode: multiply;
+	                background-size: cover;
+	                background-position: bottom;
+	                color: white;
+	                letter-spacing: 2px;
+	                padding-top: 150px;
+	                height: 100vh;
+	                animation: change 30s ease-in-out infinite;
+	            }
+	            
+	            @keyframes change {
+	                0% {
+	                    background-image: url(gif-bg.gif);
+	                    background-color: rgb(115, 28, 134);
+	                }
+	                50% {
+	                    background-image: url(gif2-bg.gif);
+	                    background-color: rgb(80, 124, 133);
+	                }
+	                100% {
+	                    background-image: url(gif3-bg.gif);
+	                    background-color: rgb(198, 211, 25);
+	                }
+	            }
+	            
+	            #header h1 {
+	                /*font-family: 'Caveat', cursive;*/
+	                letter-spacing: 5px;
+	            }
+	            
+	            #Jumbo__about {
+	                box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
+	            }
+	            /*Button positions and hover*/
+	            
+	            #btn-center {
+	                position: center;
+	            }
+	            
+	            #btn-header {
+	                border: 2px solid white;
+	                color: white;
+	                background-color: transparent;
+	                padding: 20px 20px 20px 20px;
+	            }
+	            
+	            #btn-header:hover {
+	                background-color: whitesmoke;
+	                color: grey;
+	                border: none;
+	            }
+	            
+	            #columns {
+	                box-sizing: border-box;
+	            }
+	            
+	            #szolgaltatasok {
+	                padding-top: 65px;
+	            }
+	            
+	            .card {
+	                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	                text-align: center;
+	                transition: 0.1s linear;
+	            }
+	            
+	            .card:hover {
+	                transform: scale(1.15);
+	                object-fit: ;
+	                box-shadow: rgba(32, 145, 200, 0.50) 0px 5px 15px;
+	            }
+	            
+	            .card-title {
+	                position: ;
+	                background-position: center;
+	                width: px;
+	                text-align: center;
+	            }
+	            
+	            .card img {
+	                width: 300px;
+	                height: 300px;
+	                object-fit: cover;
+	            }
+	            
+	            @media only screen and (max-width: 800px) {
+	                #nav__desctop {
+	                    display: none;
+	                }
+	                .card img {
+	                    width: auto;
+	                    height: auto;
+	                    background-position: center;
+	                    overflow: hidden;
+	                }
+	            }
+	            
+	            #footer {
+	                color: white;
+	            }
