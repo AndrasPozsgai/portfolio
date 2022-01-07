@@ -94,12 +94,11 @@
 	            
 	            .card:hover {
 	                transform: scale(1.15);
-	                object-fit: ;
+	                object-fit: n;
 	                box-shadow: rgba(32, 145, 200, 0.50) 0px 5px 15px;
 	            }
 	            
 	            .card-title {
-	                position: ;
 	                background-position: center;
 	                width: px;
 	                text-align: center;
@@ -123,6 +122,18 @@
 	                }
 	            }
 	            
+	            i {
+	                color: rgb(20, 13, 24);
+	            }
+	            
 	            #footer {
 	                color: white;
+	            }
+	            
+	            #footer i {
+	                color: white;
+	            }
+	            
+	            #footer i:hover {
+	                color: rgb(163, 84, 202);
 	            }
