@@ -1,139 +1,169 @@
-	            @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-	            @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-	            @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap');
-	            html {
-	                scroll-behavior: smooth;
-	            }
-	            
-	            body {
-	                overflow-x: hidden;
-	                font-family: 'Oswald', sans-serif;
-	                margin: 0;
-	                padding: 0;
-	                scroll-behavior: smooth;
-	            }
-	            
-	            .navbar {
-	                text-align: center;
-	                background: transparent;
-	            }
-	            /*header*/
-	            
-	            h1 {
-	                font-size: 60px;
-	            }
-	            
-	            #header {
-	                background-image: url("");
-	                background-color: rgb(29, 6, 34);
-	                background-blend-mode: multiply;
-	                background-size: cover;
-	                background-position: bottom;
-	                color: white;
-	                letter-spacing: 2px;
-	                padding-top: 150px;
-	                height: 100vh;
-	                animation: change 30s ease-in-out infinite;
-	            }
-	            
-	            @keyframes change {
-	                0% {
-	                    background-image: url(gif-bg.gif);
-	                    background-color: rgb(115, 28, 134);
-	                }
-	                50% {
-	                    background-image: url(gif2-bg.gif);
-	                    background-color: rgb(80, 124, 133);
-	                }
-	                100% {
-	                    background-image: url(gif3-bg.gif);
-	                    background-color: rgb(198, 211, 25);
-	                }
-	            }
-	            
-	            #header h1 {
-	                /*font-family: 'Caveat', cursive;*/
-	                letter-spacing: 5px;
-	            }
-	            
-	            #Jumbo__about {
-	                box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
-	            }
-	            /*Button positions and hover*/
-	            
-	            #btn-center {
-	                position: center;
-	            }
-	            
-	            #btn-header {
-	                border: 2px solid white;
-	                color: white;
-	                background-color: transparent;
-	                padding: 20px 20px 20px 20px;
-	            }
-	            
-	            #btn-header:hover {
-	                background-color: whitesmoke;
-	                color: grey;
-	                border: none;
-	            }
-	            
-	            #columns {
-	                box-sizing: border-box;
-	            }
-	            
-	            #szolgaltatasok {
-	                padding-top: 65px;
-	            }
-	            
-	            .card {
-	                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	                text-align: center;
-	                transition: 0.1s linear;
-	            }
-	            
-	            .card:hover {
-	                transform: scale(1.15);
-	                object-fit: n;
-	                box-shadow: rgba(32, 145, 200, 0.50) 0px 5px 15px;
-	            }
-	            
-	            .card-title {
-	                background-position: center;
-	                width: px;
-	                text-align: center;
-	            }
-	            
-	            .card img {
-	                width: 300px;
-	                height: 300px;
-	                object-fit: cover;
-	            }
-	            
-	            @media only screen and (max-width: 800px) {
-	                #nav__desctop {
-	                    display: none;
-	                }
-	                .card img {
-	                    width: auto;
-	                    height: auto;
-	                    background-position: center;
-	                    overflow: hidden;
-	                }
-	            }
-	            
-	            i {
-	                color: rgb(20, 13, 24);
-	            }
-	            
-	            #footer {
-	                color: white;
-	            }
-	            
-	            #footer i {
-	                color: white;
-	            }
-	            
-	            #footer i:hover {
-	                color: rgb(163, 84, 202);
-	            }
+				@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+				@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@500&display=swap');
+				html {
+				    scroll-behavior: smooth;
+				}
+				
+				body {
+				    overflow-x: hidden;
+				    font-family: 'Oswald', sans-serif;
+				    margin: 0;
+				    padding: 0;
+				    scroll-behavior: smooth;
+				}
+				
+				.navbar {
+				    text-align: center;
+				    background: transparent;
+				}
+				/*header*/
+				
+				h1 {
+				    font-size: 60px;
+				}
+				
+				#header {
+				    background-image: url("");
+				    background-color: rgb(29, 6, 34);
+				    background-blend-mode: multiply;
+				    background-size: cover;
+				    background-position: bottom;
+				    color: white;
+				    letter-spacing: 2px;
+				    padding-top: 150px;
+				    height: 100vh;
+				    animation: change 30s ease-in-out infinite;
+				}
+				
+				@keyframes change {
+				    0% {
+				        background-image: url(gif-bg.gif);
+				        background-color: rgb(115, 28, 134);
+				    }
+				    50% {
+				        background-image: url(gif2-bg.gif);
+				        background-color: rgb(80, 124, 133);
+				    }
+				    100% {
+				        background-image: url(gif3-bg.gif);
+				        background-color: rgb(198, 211, 25);
+				    }
+				}
+				
+				#header h1 {
+				    /*font-family: 'Caveat', cursive;*/
+				    letter-spacing: 5px;
+				}
+				
+				#Jumbo__about {
+				    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
+				}
+				/*Button positions and hover*/
+				
+				#btn-center {
+				    position: center;
+				}
+				
+				#btn-header {
+				    border: 2px solid white;
+				    color: white;
+				    background-color: transparent;
+				    padding: 20px 20px 20px 20px;
+				}
+				
+				#btn-header:hover {
+				    background-color: whitesmoke;
+				    color: grey;
+				    border: none;
+				}
+				
+				#columns {
+				    box-sizing: border-box;
+				}
+				
+				#projects {
+				    padding-top: 65px;
+				    font-weight: 500;
+				    letter-spacing: 0.3rem;
+				    font-family: 'Oswald', sans-serif;
+				    font-size: 30px;
+				}
+				
+				#projects>h2 {
+				    padding-bottom: 50px;
+				}
+				
+				hr {
+				    background: radial-gradient( rgb(216, 44, 216), rgb(186, 166, 202));
+				    color: rgb(119, 59, 131);
+				    border: none;
+				    height: 3px;
+				    width: 25%;
+				}
+				
+				.sec-lin {
+				    background-color: rgb(129, 46, 177);
+				    border: 0 none;
+				    color: rgb(119, 59, 131);
+				    height: 3px;
+				    width: 33%;
+				}
+				
+				#cards-con {
+				    margin-top: 1rem;
+				}
+				
+				.card {
+				    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+				    text-align: center;
+				    transition: 0.1s linear;
+				}
+				
+				.card:hover {
+				    transform: scale(1.05);
+				    object-fit: n;
+				    box-shadow: rgba(138, 24, 148, 0.5) 0px 5px 15px;
+				}
+				
+				.card-title {
+				    background-position: center;
+				    width: px;
+				    text-align: center;
+				}
+				
+				.card img {
+				    width: 300px;
+				    height: 300px;
+				    object-fit: cover;
+				}
+				
+				@media only screen and (max-width: 800px) {
+				    #nav__desctop {
+				        display: none;
+				    }
+				    .card {
+				        padding-top: 5rem;
+				    }
+				    .card img {
+				        width: auto;
+				        height: auto;
+				        background-position: center;
+				        overflow: hidden;
+				    }
+				}
+				
+				i {
+				    color: rgb(20, 13, 24);
+				}
+				
+				#footer {
+				    color: white;
+				}
+				
+				#footer i {
+				    color: white;
+				}
+				
+				#footer i:hover {
+				    color: rgb(163, 84, 202);
+				}
