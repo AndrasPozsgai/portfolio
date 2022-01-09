@@ -122,7 +122,7 @@
 				.card:hover {
 				    transform: scale(1.05);
 				    object-fit: n;
-				    box-shadow: rgba(138, 24, 148, 0.5) 0px 5px 15px;
+				    box-shadow: rgba(148, 72, 155, 0.5) 0px 5px 15px;
 				}
 				
 				.card-title {
@@ -153,7 +153,7 @@
 				}
 				
 				i {
-				    color: rgb(20, 13, 24);
+				    color: rgb(36, 16, 48);
 				}
 				
 				#footer {
