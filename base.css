@@ -152,6 +152,10 @@
 				    }
 				}
 				
+				.social-icon {
+				    background: rgb(154, 103, 202);
+				}
+				
 				i {
 				    color: rgb(36, 16, 48);
 				}
@@ -165,5 +169,6 @@
 				}
 				
 				#footer i:hover {
-				    color: rgb(163, 84, 202);
+				    color: hsl(175, 49%, 54%);
+				    text-shadow: 1px 2px 1px palevioletred;
 				}
