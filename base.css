@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@500&display=swap');
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
     font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
@@ -57,8 +57,8 @@ h1 {
     letter-spacing: 5px;
 }
 
-#Jumbo__about {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
+#Jumbo-about {
+    box-shadow: rgba(201, 196, 196, 0.4) 0px 5px 5px;
 }
 
 
@@ -113,19 +113,20 @@ hr {
     width: 33%;
 }
 
-#cards-con {
-    margin-top: 1rem;
+#cards-wrap {
+    background-color: rgb(156, 154, 154);
 }
 
 .card {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px -2px;
     text-align: center;
     transition: 0.1s linear;
+    padding-top: 15px;
 }
 
 .card:hover {
     transform: scale(1.05);
-    object-fit: n;
+    object-fit: none;
     box-shadow: rgba(148, 72, 155, 0.5) 0px 5px 15px;
 }
 
@@ -135,13 +136,11 @@ hr {
 }
 
 .card img {
-    width: 300px;
-    height: 300px;
     object-fit: cover;
 }
 
-@media only screen and (max-width: 800px) {
-    #nav__desctop {
+@media only screen and (min-device-width: 351px) and (max-device-width:800px) {
+    #nav-desctop {
         display: none;
     }
     .card {
@@ -150,8 +149,8 @@ hr {
     .card img {
         width: auto;
         height: auto;
-        background-position: center;
-        overflow: hidden;
+        object-fit: cover;
+        overflow-x: scroll;
     }
 }
 
@@ -174,4 +173,23 @@ i {
 #footer i:hover {
     color: hsl(175, 49%, 54%);
     text-shadow: 1px 2px 1px palevioletred;
+}
+
+@media only screen and (max-device-width: 350px) {
+    #cards-con {
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+        width: 140%;
+    }
+    .card {
+        max-width: 450px;
+    }
+    .card_mobile {
+        max-width: 75vw;
+        overflow-x: scroll;
+    }
+    .card img {
+        object-fit: cover;
+    }
 }
