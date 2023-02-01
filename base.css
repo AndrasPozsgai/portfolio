@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -106,6 +107,20 @@ p {
     text-align: justify;
 }
 
+#Jumbo-about article {
+    width: 70%;
+    margin: auto;
+}
+
+b {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
 
 /*Button positions and hover*/
 
@@ -168,11 +183,8 @@ hr {
     color: white;
     text-align: center;
     transition: 0.1s linear;
-    border-radius: 0px 0px 0px 30px;
-}
-
-.card :nth-child(2) {
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 30px 30px 0px 30px;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -188,6 +200,10 @@ hr {
 
 .card img {
     object-fit: cover;
+}
+
+.card_mobile {
+    border-radius: 0 0 0 0;
 }
 
 @media only screen and (min-device-width: 351px) and (max-device-width:800px) {
@@ -235,6 +251,7 @@ i {
     }
     .card {
         max-width: 450px;
+        color: red;
     }
     .card_mobile {
         max-width: 75vw;
