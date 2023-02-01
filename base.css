@@ -12,6 +12,10 @@ body {
     scroll-behavior: smooth;
 }
 
+p {
+    letter-spacing: 2;
+}
+
 .navbar {
     text-align: center;
     background: transparent;
@@ -20,16 +24,12 @@ body {
 
 /*header*/
 
-h1 {
-    font-size: 60px;
-}
-
 
 /* Animation */
 
 .line-1 {
     position: relative;
-    width: 20em;
+    width: 10em;
     margin: 0 auto;
     border-right: 2px solid rgba(211, 144, 231, 0.75);
     font-size: 200%;
@@ -40,10 +40,10 @@ h1 {
 }
 
 
-/* Animation */
+/* text animation */
 
 .anim-typewriter {
-    animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal;
+    animation: typewriter 4s steps(36) 1s 1 normal both, blinkTextCursor 500ms steps(36) infinite normal;
 }
 
 @keyframes typewriter {
@@ -57,7 +57,7 @@ h1 {
 
 @keyframes blinkTextCursor {
     from {
-        border-right-color: rgba(255, 255, 255, .75);
+        border-right-color: rgba(255, 255, 255, .50);
     }
     to {
         border-right-color: transparent;
@@ -73,7 +73,7 @@ h1 {
     background-attachment: fixed;
     color: white;
     letter-spacing: 2px;
-    padding-top: 150px;
+    padding-top: 12em;
     height: 100vh;
     animation: change 30s ease-in-out infinite;
 }
@@ -93,9 +93,10 @@ h1 {
     }
 }
 
-#header h1 {
+#header__text {
     /*font-family: 'Caveat', cursive;*/
-    letter-spacing: 5px;
+    letter-spacing: 0.09em;
+    margin-top: 1em;
 }
 
 #Jumbo-about {
@@ -158,15 +159,20 @@ hr {
 }
 
 #cards-wrap {
-    background-color: rgb(156, 154, 154);
+    background-color: rgb(230, 238, 237);
+    padding: 10px
 }
 
 .card {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 5px -2px;
+    background: linear-gradient(#8f54c0, #1a224b);
+    color: white;
     text-align: center;
     transition: 0.1s linear;
-    padding-top: 15px;
-    border-radius: 45px 30px 50px 30px / 0px 30px 0px 30px;
+    border-radius: 0px 0px 0px 30px;
+}
+
+.card :nth-child(2) {
+    border-radius: 0px 0px 0px 0px;
 }
 
 .card:hover {
