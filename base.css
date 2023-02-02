@@ -202,33 +202,6 @@ hr {
     object-fit: cover;
 }
 
-.card_mobile {
-    border-radius: 0 0 0 0;
-}
-
-@media only screen and (min-device-width: 351px) and (max-device-width:800px) {
-    #nav-desctop {
-        display: none;
-    }
-    .card {
-        padding-top: 4rem;
-    }
-    .card img {
-        width: auto;
-        height: auto;
-        object-fit: cover;
-        overflow-x: scroll;
-    }
-}
-
-.social-icon {
-    background: rgb(154, 103, 202);
-}
-
-i {
-    color: rgb(36, 16, 48);
-}
-
 #footer {
     color: white;
 }
@@ -242,7 +215,15 @@ i {
     text-shadow: 1px 2px 1px palevioletred;
 }
 
-@media only screen and (max-device-width: 350px) {
+.social-icon {
+    background: rgb(154, 103, 202);
+}
+
+i {
+    color: rgb(36, 16, 48);
+}
+
+@media screen and (max-width: 450px) {
     #cards-con {
         overflow-x: auto;
         display: flex;
@@ -250,8 +231,7 @@ i {
         width: 140%;
     }
     .card {
-        max-width: 450px;
-        color: red;
+        max-width: 350px;
     }
     .card_mobile {
         max-width: 75vw;
@@ -259,5 +239,32 @@ i {
     }
     .card img {
         object-fit: cover;
+    }
+    #footer p {
+        color: white;
+    }
+    p,
+    b {
+        color: rgb(75, 28, 75);
+        font-size: 75%;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width:800px) {
+    #nav-desctop {
+        display: none;
+    }
+    .card {
+        padding-top: 0rem;
+        width: 80%;
+        align-content: center;
+        margin: auto;
+    }
+    .card img {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        overflow-x: scroll;
+        margin-top: 0px;
     }
 }
